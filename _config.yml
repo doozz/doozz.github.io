@@ -12,8 +12,10 @@ Meta:
 Nav:
  - Link: /
    Title: 归档
+   hover: archive
  - Link: /
    Title: 文章
+   hover: archive
 # # set nav to active status
 # hover = "archive"
 # blank = false

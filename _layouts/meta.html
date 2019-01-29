@@ -17,7 +17,7 @@
             <nav id="site-nav">
                 <ul class="nav nav-inverse nav-pills pull-right">
                     {% for post in site.Nav %}
-                    <li role="presentation" class="{{if eq .Hover $.Hover}}active{{end}}">
+                    <li role="presentation" class="{{% if post.Hover == $.Hover $}}active{{% endif %}}">
                         <a href="{{ post.Link}} ">
                             {{ post.Title}}
                         </a>
@@ -31,5 +31,12 @@
         </div>
     </div>
 </header>
-
+<script src="/static/js/jquery-2.1.4.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/prism.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("pre code").addClass("line-numbers")
+    });
+</script>
 </body>
