@@ -17,7 +17,7 @@
             <nav id="site-nav">
                 <ul class="nav nav-inverse nav-pills pull-right">
                     {% for post in site.Nav %}
-                    <li role="presentation" class="{{% if post.Hover == $.Hover %}}active{{% endif %}}">
+                    <li role="presentation" class="{{% if post.Hover == page.url %}}active{{% endif %}}">
                         <a href="{{ post.Link}} ">
                             {{ post.Title}}
                         </a>
@@ -26,7 +26,7 @@
                 </ul>
             </nav>
             <h3 id="site-title">
-                <a href="{{ site.Path }}/">{{ site.Meta.Title }} <sup>{{ site.Meta.Subtitle }}</sup></a>
+                <a href="{{ site.Path }}/">{{ site.Meta.Title }}{{ page.url }} <sup>{{ site.Meta.Subtitle }}</sup></a>
             </h3>
         </div>
     </div>
