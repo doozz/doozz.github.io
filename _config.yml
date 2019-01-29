@@ -8,3 +8,14 @@ Path: doozz.github.io
 Meta:
   Title: 一条咸鱼
   Subtitle: doozz.github.io
+
+nav:
+  -
+  Link = "/"
+  Title = "归档"
+  -
+  Link = "/"
+  Title = "文章"
+# # set nav to active status
+# hover = "archive"
+# blank = false
