@@ -1,5 +1,5 @@
 ---
-layout: mate
+layout: meta
 ---
 
 
