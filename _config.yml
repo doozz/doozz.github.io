@@ -16,9 +16,6 @@ Nav:
  - Link: /
    Title: 文章
    Hover: archive
- - Link: about
-   Title: about
-   Hover: about
 # # set nav to active status
 # hover = "archive"
 # blank = false
