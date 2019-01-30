@@ -17,7 +17,7 @@
             <nav id="site-nav">
                 <ul class="nav nav-inverse nav-pills pull-right">
                     {% for post in site.Nav %}
-                    <li role="presentation" class="post.Hover">
+                    <li role="presentation" class="{{ post.Hover }}">
                         <a href="{{ post.Link}} ">
                             {{ post.Title}}
                         </a>
