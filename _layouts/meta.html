@@ -17,8 +17,15 @@
         <div id="archive-list">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 panel panel-default">
-                    {% assign a = site.posts | group_by:"graduation_year" %}
-                    {{ a }}
+                    
+                    {% 
+                        assign posts[] = []
+                        for post in site.posts 
+                        assign Y = post.date | date: "%d"
+                        posts[Y][] = post
+                        endfor 
+                        posts
+                    %}
 <!--                     {% for post in site.posts %} -->
                     <div class="archive">
                         <h3>2019</h3>
