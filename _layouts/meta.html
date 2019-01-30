@@ -24,8 +24,8 @@
                         assign Y = post.date | date: "%d"
                         posts[Y][] = post
                         endfor 
-                        posts
                     %}
+                    {{ posts }}
 <!--                     {% for post in site.posts %} -->
                     <div class="archive">
                         <h3>2019</h3>
