@@ -14,17 +14,7 @@
 	<header id="header">
     <div class="container">
         <div class="header clearfix">
-            <nav id="site-nav">
-                <ul class="nav nav-inverse nav-pills pull-right">
-                    {% for post in site.Nav %}
-                    <li role="presentation" class="{{ post.Hover }}">
-                        <a href="{{ post.Link}} ">
-                            {{ post.Title}}
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </nav>
+            {% include nav.html %}
             <h3 id="site-title">
                 <a href="{{ site.Path }}/">{{ site.Meta.Title }} <sup>{{ site.Meta.Subtitle }}</sup></a>
             </h3>
