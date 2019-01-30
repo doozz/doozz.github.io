@@ -4,7 +4,7 @@
         {% for post in site.Nav %}
         <li role="presentation" class="{% if current[1] == post.Hover %}active{% endif %}">
             <a href="{{ post.Link}} ">
-                {{ post.Title}}
+                {{ post.Title}}-{{ current[1]}}-{{ post.Hover }}
             </a>
         </li>
         {% endfor %}
