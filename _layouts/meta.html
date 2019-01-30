@@ -38,6 +38,7 @@
     $(document).ready(function () {
         $("pre code").addClass("line-numbers")
 	var path = window.location.pathname;
+	path = path.replace("/","")
 	$('.'+path).addClass("active")
     });
 </script>
