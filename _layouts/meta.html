@@ -17,7 +17,9 @@
         <div id="archive-list">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 panel panel-default">
-                    {{ site.posts }}
+                    {% for post in site.posts %}
+                    {{ post }}
+                    {% endfor %}
                     <div class="archive">
                         <h3>归档</h3>
                         <hr/>
