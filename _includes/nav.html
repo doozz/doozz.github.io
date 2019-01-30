@@ -1,5 +1,5 @@
 <nav id="site-nav">
-    <ul class="nav nav-inverse nav-pills pull-right">
+    <ul class="nav nav-inverse nav-pills pull-right" class="{{ page.url }} {{ page.path }}">
         {% assign current = page.url | split: '/' %}
         {% for post in site.Nav %}
         <li role="presentation" class="{% if current[2] == post.Hover %}active{% endif %}">
