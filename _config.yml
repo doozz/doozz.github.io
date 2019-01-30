@@ -12,7 +12,7 @@ Meta:
 Nav:
  - Link: /
    Title: 归档
-   Hover: all
+   Hover: index
  - Link: /
    Title: 文章
    Hover: archive
