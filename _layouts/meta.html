@@ -19,9 +19,9 @@
                 <div class="col-md-10 col-md-offset-1 panel panel-default">
                     {% assign p = [] %}
                     {% for post in site.posts %}
-                    {% Y = post.date | date: "%b" %}
-                    {% p[Y][]['url'] = post.url %}
-                    {% p[Y][]['title'] = post.title %}
+                    {% assign Y = post.date | date: "%b" %}
+                    {% p[Y][][url] = post.url %}
+                    {% p[Y][][title] = post.title %}
                     {% endfor %}
                     {{ p }}
                     <div class="archive">
