@@ -1,10 +1,10 @@
 <nav id="site-nav">
     <ul class="nav nav-inverse nav-pills pull-right">
-        {% assign current = page.url | downcase | split: '/' %}
+        {% assign current = page.url | split: '/' %}
         {% for post in site.Nav %}
-        <li role="presentation" class="{% if current[1] == post.Hover %}active{% endif %}">
+        <li role="presentation" class="{% if current[2] == post.Hover %}active{% endif %}">
             <a href="{{ post.Link}} ">
-                {{ post.Title}}-{{ current }}
+                {{ post.Title}}-{{ current[2] }}
             </a>
         </li>
         {% endfor %}
