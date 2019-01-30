@@ -17,7 +17,7 @@
         <div id="archive-list">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 panel panel-default">
-                    {{ a = site.posts | group_by:"graduation_year" }}
+                    {% assign a = site.posts | group_by:"graduation_year" %}
                     {{ a }}
 <!--                     {% for post in site.posts %} -->
                     <div class="archive">
