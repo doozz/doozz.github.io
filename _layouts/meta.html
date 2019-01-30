@@ -17,7 +17,7 @@
             <nav id="site-nav">
                 <ul class="nav nav-inverse nav-pills pull-right">
                     {% for post in site.Nav %}
-                    <li role="presentation" class="{{% if post.Hover == page.url %}}active{{% endif %}}">
+                    <li role="presentation" class="post.Hover">
                         <a href="{{ post.Link}} ">
                             {{ post.Title}}
                         </a>
@@ -37,6 +37,8 @@
 <script>
     $(document).ready(function () {
         $("pre code").addClass("line-numbers")
+	var path = window.location.pathname;
+	$("."+path).addClass("active")
     });
 </script>
 </body>
