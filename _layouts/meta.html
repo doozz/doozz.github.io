@@ -14,27 +14,23 @@
 </header>
 <section id="main">
     <div class="container">
-        <div id="article-list">{{if .Tag}}
-            <h2 class="tag text-center">{{.Tag.Name}}</h2>{{end}}
-	    {% for post in site.posts %}
-            <article class="article">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1 panel panel-default">
-                        <header class="header">
-                            <div class="meta">
-                        <span class="date">
-                            <span class="month">{{ post.date | date: "%Y"}}</span>
-                            <span class="day">{{ post.date | date: "%d" }}</span>
-                        </span>
-                            </div>
-                            <h3 class="title">
-                                <a href="{{ post.url }}">{{ post.title }}</a>
-                            </h3>
-                        </header>
+        <div id="archive-list">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 panel panel-default">
+<!--                     {% for post in site.posts %} -->
+                    <div class="archive">
+                        <h3>2019</h3>
+                        <hr/>
+                        {% for post in site.posts %}
+                        <h4>
+                            <span class="date">{{ post.date | date: "%b" }}.{{ post.date | date: "%d" }}</span>
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </h4>
+                        {% endfor %}
                     </div>
+<!--                     {% endfor %} -->
                 </div>
-            </article>
-            {% endfor %}
+            </div>
         </div>
     </div>
 </section>
