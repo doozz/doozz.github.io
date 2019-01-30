@@ -17,13 +17,6 @@
         <div id="archive-list">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 panel panel-default">
-                    {% assign p = [] %}
-                    {% for post in site.posts %}
-                    {% assign Y = post.date | date: "%b" %}
-                    {% p[Y][][url] = post.url %}
-                    {% p[Y][][title] = post.title %}
-                    {% endfor %}
-                    {{ p }}
                     <div class="archive">
                         <h3>归档</h3>
                         <hr/>
