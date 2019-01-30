@@ -2,7 +2,7 @@
     <ul class="nav nav-inverse nav-pills pull-right">
         {% assign current = page.url | downcase | split: '/' %}
         {% for post in site.Nav %}
-        <li role="presentation" class="{% if current[1] == post.Hover %}class='active'{% endif %}">
+        <li role="presentation" class="{% if current[1] == post.Hover %}active{% endif %}">
             <a href="{{ post.Link}} ">
                 {{ post.Title}}
             </a>
