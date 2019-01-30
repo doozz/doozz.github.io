@@ -16,7 +16,7 @@
     <div class="container">
         <div id="article-list">{{if .Tag}}
             <h2 class="tag text-center">{{.Tag.Name}}</h2>{{end}}
-	    { % for post in site.posts % }
+	    {% for post in site.posts %}
             <article class="article">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 panel panel-default">
@@ -34,7 +34,7 @@
                     </div>
                 </div>
             </article>
-            { % endfor % }
+            {% endfor %}
         </div>
     </div>
 </section>
