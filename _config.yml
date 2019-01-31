@@ -16,7 +16,5 @@ Nav:
  - Link: /
    Title: 文章
    Hover: archive
- - Link: about
-   Title: 关于
-   Hover: about
+
 
