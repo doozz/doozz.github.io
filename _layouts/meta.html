@@ -19,7 +19,6 @@
                 {{ site.categories }}
                 <div class="col-md-10 col-md-offset-1 panel panel-default">
                     {% for cat in site.categories %}
-                    {{ cat }}
                     <div class="archive">
                         <h3>{{ cat[0] }}</h3>
                         <hr/>
@@ -31,7 +30,6 @@
                         {% endfor %}
                     </div>
                     {% endfor %}
-                    {% endif %}
                 </div>
             </div>
         </div>
