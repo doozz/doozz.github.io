@@ -17,7 +17,6 @@
         <div id="archive-list">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 panel panel-default">
-                    {% if site.posts != empty %} 
                     {% for cat in site.categories %}
                     {{ cat }}
                     <div class="archive">
@@ -31,7 +30,7 @@
                         {% endfor %}
                     </div>
                     {% endfor %}
-                    {% else %} No posts {% endif %}
+                    {% endif %}
                 </div>
             </div>
         </div>
