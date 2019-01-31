@@ -16,6 +16,7 @@
     <div class="container">
         <div id="archive-list">
             <div class="row">
+                {{ site.categories }}
                 <div class="col-md-10 col-md-offset-1 panel panel-default">
                     {% for cat in site.categories %}
                     {{ cat }}
