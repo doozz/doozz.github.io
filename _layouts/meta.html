@@ -17,8 +17,9 @@
         <div id="archive-list">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 panel panel-default">
-                    {% if site.posts != empty %} {% for cat in site.categories %} {{ cat[0] | join: "/"}} {{ cat[1].size }} {% endfor %}
+                    {% if site.posts != empty %} 
                     {% for cat in site.categories %}
+                    {{ cat }}
                     <div class="archive">
                         <h3>{{ cat[0] }}</h3>
                         <hr/>
