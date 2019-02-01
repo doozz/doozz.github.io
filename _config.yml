@@ -10,11 +10,8 @@ Meta:
   Subtitle: doozz.github.io
 
 Nav:
- - Link: index
+ - Link: /index
    Title: 归档
    Hover: index
- - Link: /
-   Title: 文章
-   Hover: archive
 
 
