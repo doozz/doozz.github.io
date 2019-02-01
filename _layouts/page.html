@@ -15,8 +15,11 @@
 </header>
 <section id="main">
     {% for tag in site.tags %}
+    {% for post in tag[1] %}
+{{ post.title }}
+{% endfor %}
 
-{{ tag[0] }} 是 tag name
+
 
 
 {% endfor %}
