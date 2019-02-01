@@ -1,4 +1,17 @@
-
+<!DOCTYPE html>
+<html>
+{% include header.html %}
+<body>
+<header id="header">
+    <div class="container">
+        <div class="header clearfix">
+            {% include nav.html %}
+            <h3 id="site-title">
+                <a href="{{ site.Path }}/">{{ site.Meta.Title }} <sup>{{ site.Meta.Subtitle }}</sup></a>
+            </h3>
+        </div>
+    </div>
+</header>
 <section id="main">
     <div class="container">
         <div id="article-single">
@@ -29,3 +42,6 @@
         {{template "embed/comment.html" .}}
     </div>
 </section>
+{% include footer.html %}
+</body>
+</html>
