@@ -14,9 +14,9 @@
     </div>
 </header>
 <section id="main">
-    {% for tag in site.tags %}
-    {% for post in tag[1] %}
-{{ post.title }}
+    {% for post site.tags.tset %}
+        {{ post.title }}
+    
 {% endfor %}
 
 
