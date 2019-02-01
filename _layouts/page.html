@@ -14,9 +14,13 @@
     </div>
 </header>
 <section id="main">
-    {{ site.tags }}
-    123
-    {{ site.tags.test }}
+    {% for tag in site.tags %}
+
+{{ tag[0] }} 是 tag name
+
+
+{% endfor %}
+
 </section>
 {% include footer.html %}
 </body>
