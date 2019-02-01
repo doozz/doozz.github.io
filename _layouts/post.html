@@ -1,1 +1,31 @@
 
+<section id="main">
+    <div class="container">
+        <div id="article-single">
+            <article class="article">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 panel panel-default">
+                        <header class="header">
+                            <div class="meta">
+                        <span class="date">
+                            <span class="month">>{{ page.date | date: "%m" }}</span>
+                            <span class="day">{{ page.date | date: "%d" }}</span>
+                        </span>
+                            </div>
+                            <h3 class="title">
+                                <a href="{{ page.url }}">{{ page.title }}</a>
+                            </h3>
+                        </header>
+                        <aside class="aside clearfix">
+                            {% for tag in site.tags %}
+                            <a class="tag label label-info" href="{{ tag[0] }}">{{ tag[0] }}</a>
+                            {% endfor %}
+                        </aside>
+                        <section class="brief"> {{ content }}</section>
+                    </div>
+                </div>
+            </article>
+        </div>
+        {{template "embed/comment.html" .}}
+    </div>
+</section>
