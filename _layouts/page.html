@@ -14,8 +14,9 @@
     </div>
 </header>
 <section id="main">
+    {{ site.tags.test }}
     {% for tag in site.tags %}
-
+        
 {{ tag[0] }} 是 tag name
 {{ tag[1] }} 包含 tag 下的 posts
 
