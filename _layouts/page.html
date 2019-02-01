@@ -14,18 +14,10 @@
     </div>
 </header>
 <section id="main">
-    {{ site.tags[0].test }}
-    {% for tag in site.tags %}
-        
-{{ tag[0] }} 是 tag name
-{{ tag[1] }} 包含 tag 下的 posts
-
-
-
-
-
-
-{% endfor %}
+    {{ site.tags.test }}
+    {% for post in site.tags.test %}
+    {{ post.title }}
+    {% endfor %}
 
 </section>
 {% include footer.html %}
