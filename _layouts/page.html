@@ -14,6 +14,7 @@
     </div>
 </header>
 <section id="main">
+    {{ page.url }}
     {% for post in site.tags.test %}
     {{ post.title }}
     {% endfor %}
